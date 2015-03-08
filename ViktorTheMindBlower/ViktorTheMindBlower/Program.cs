@@ -242,7 +242,7 @@ namespace ViktorTheMindBlower
                     return;
                 }
             }
-            else if (useQ && target != null && Q.IsReady() && Player.Distance(target) <= Q.Range)
+            else if (useQ && target != null && Q.IsReady() && Player.Distance(target.p) <= Q.Range)
             {
                 Q.CastOnUnit(target, packets());
 
